@@ -1,0 +1,398 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/ 
+
+
+.transaction_wrapper{ 
+    margin: 0 auto;
+}
+
+#year_sectors_modal .modal-content{
+    padding: 50px;
+    background-image: linear-gradient(180deg, #EFF5F3 -74.84%, rgba(239, 245, 243, 0) 100%);
+}
+ 
+ .filter_panel .filter_text {
+    float: right; 
+    font-weight: 500;
+    font-size: 16px;
+}
+.mixitup_inner{
+    margin-top: 24px;
+}
+.lnk_button_inner {
+    text-align: center;
+}
+.filter_panel {
+    position: relative;
+    padding: 10px 0 40px;
+}
+.filter_panel .open_modal {
+    float: right;
+    cursor: pointer;
+    font-weight: 600;
+    color: #10694e;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.filter_panel .open_modal strong {
+    font-weight: 600;
+    color: #10694e;
+}
+div#post_inner { 
+    padding: 40px 0;
+}
+.lnkb_transaction_border{
+     border-top: 1px solid #E9F4EF;
+     width:100%;
+}
+#post_inner img{
+    float: left;
+    width: 38%;
+    padding-right: 20px;
+    padding-top:10px;
+}
+#post_inner .post_details{
+    float: left;
+    width: 60%;
+}
+#post_inner .post_details a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #212121;
+}
+#post_inner .post_details p{
+     font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212121;
+    margin:8px 0;
+}
+/*#post_inner .post_details p span{
+    font-weight: 600;
+}*/
+#post_inner .post_details p.lnk-excerpt{
+    margin:0;
+}
+/*------ radio --------*/
+.search_list_inner{
+    display: inline-table;
+    margin-bottom: 24px;
+}
+.search_list_inner h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #212121;
+}
+.search_list_inner.fist h3 {
+    margin-bottom: 16px;
+}
+.search_list_inner.last h3{
+    margin-bottom: 16px;
+}
+.InputGroup {
+    display: -webkit-inline-box;
+    width: 100%;
+}
+.InputGroup input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+.InputGroup label { 
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: #0D324F;
+    padding: 10px;
+    transition: color --transition-fast ease-out, background-color --transition-fast ease-in;
+    user-select: none;
+    display: inline-table;
+    margin: 0px;
+    padding: 7px 20px;
+    gap: 8px;
+    width: auto;
+    height: 37px;
+    background: #E9F4EF;
+    border-radius: 100px;
+    margin: 10px 10px 10px 0;
+
+}
+.InputGroup input[type="radio"]:checked + label {
+    background-color: #10694e; 
+    color: #fff;
+}
+.mix { 
+    min-height: 152px !important;
+    padding: 20px;
+    margin: 0px;
+}
+.sectors label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #212121;
+    background: none;
+    padding: 0px 2px;
+    margin: 3px 0px;
+    width: 24%;
+    text-align: left;
+    text-transform: capitalize;
+}
+.sectors input[type="radio"]:checked + label {
+    background: none !important; 
+    color: #10694e;
+    font-weight: 600;
+}
+.modal_close_btn{
+     position: absolute;
+    top: 22px;
+    right: 25px;
+    font-size: 40px !important;
+    font-weight: normal !important;
+    color: #212121 !important;
+    opacity: 1 !important;
+    transition: all .2s linear;
+}
+.modal_close_btn:hover{
+    color: #10694e !important;
+}
+.modal_close_btn:focus{
+ outline:none;   
+}
+
+#post_inner .post_details p.transaction_cat_name {
+    color: #212121; 
+}
+#post_inner .post_details p.transaction_ongoing {
+    text-transform: capitalize;
+    color: #212121;
+}
+
+/*=====================ajax=================*/
+.select_alert{
+display: none;
+}
+.spinner{  
+    width: 100%;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.results{
+background: #F6FBFF;
+border-radius: 4px;
+padding: 16px 23px;
+text-transform: capitalize;
+}
+
+.paginationjs-pages .disabled {
+    display: none;
+}
+/* mixitup Controls
+---------------------------------------------------------------------- */
+/*.home .control {
+    background: #E9F4EF;
+}*/
+.control {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 150ms;
+    background: #fff;
+    border-radius: 100px;
+    padding: 8px 20px;
+    font-family: "Montserrat", Sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'cv05' on, 'cv06' on, 'liga' off;
+    color: #616161;
+    margin-bottom: 16px;
+    border: none;
+    margin-right: 2px;
+    margin-left: 2px;
+    transition: all .2s linear;
+} 
+.mixitup-control-active,
+.home .mixitup-control-active{
+background: #10694e;
+color: #fff;
+}
+.control:focus{
+outline: none;
+}
+.control:first-of-type { 
+border-radius: 100px;
+}
+
+
+/*.control:last-of-type {    
+background: #E9F4EF;
+border-radius: 100px;
+color: #616161;
+border: none;
+}*/
+.control:hover {
+background: #10694e;
+text-decoration: none;
+color: #fff;
+border: none;
+}
+.mixitup-control-active[data-filter]:after {
+background: transparent;
+}
+.control[data-filter] + .control[data-sort] {
+margin-left: .75rem;
+}
+.control[data-filter=".green"] {
+color: #91e6c7;
+}
+.control[data-filter=".blue"] {
+color: #5ecdde;
+}
+.control[data-filter=".pink"] {
+color: #d595aa;
+}
+.control[data-filter="none"] {
+color: #2f2f2f;
+}
+#year_sectors_modal input[type='submit'],
+#year_sectors_modal input[type='reset']{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 8px 24px;
+}
+#year_sectors_modal input[type='submit']{
+    background: #10694e;
+    color: #fff;
+    margin-right: 8px;
+    transition: all .2s linear;
+}
+#year_sectors_modal input[type='submit']:hover{
+    background: #187A53;
+    
+}
+#year_sectors_modal input[type='reset']{
+    border: 1px solid #10694e;
+    color: #10694e;
+    background: #fff;
+    transition: all .2s linear;
+}
+#year_sectors_modal input[type='reset']:hover{
+    color: #fff;
+    background: #10694e;
+}
+#year_sectors_modal input[type='reset']:focus,
+#year_sectors_modal input[type='submit']:focus{
+      box-shadow:none;
+}
+
+/*---pagination----*/
+.controls .spinner{
+    color:#000;
+    text-align:center;
+}
+.home #pagination-list{
+    display:none;
+}
+.paginationjs-pages ul{
+    padding: 0;
+}
+.paginationjs-pages ul li{
+    list-style: none;
+    display: inline-block; 
+    border: 1px solid #10694e;
+    margin: 0px 4px;
+    transition: all .2s linear;
+}
+.paginationjs-pages ul li:hover{
+    background: #10694e;
+}
+.paginationjs-pages ul li:hover a{
+    color: #fff;
+}
+.paginationjs-pages ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #10694e;
+    text-decoration: none;
+    margin:0 15px;
+}
+li.paginationjs-prev.J-paginationjs-previous,
+li.paginationjs-next.J-paginationjs-next{
+    border: 1px solid #10694e;
+}
+li.paginationjs-prev.J-paginationjs-previous a,
+li.paginationjs-next.J-paginationjs-next a{
+    color: #10694e;
+} 
+li.paginationjs-next.J-paginationjs-next,
+li.paginationjs-next.J-paginationjs-prev{
+    position: relative;
+    transition: all .2s linear;
+}
+li.paginationjs-prev.J-paginationjs-previous:hover,
+li.paginationjs-next.J-paginationjs-next:hover{
+    background: #10694e;
+}
+li.paginationjs-prev.J-paginationjs-previous:hover a,
+li.paginationjs-next.J-paginationjs-next:hover a{
+    color: #fff;
+}
+li.paginationjs-page.J-paginationjs-page.active {
+    background: #10694e;
+}
+.paginationjs-pages ul li.active a{
+    background-color: #10694e;
+    color: #fff;  
+    font-weight: 700;
+}
+.data-container{
+    display: inline-block;
+}
+ #pagination-list{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.paginationjs{
+    margin:0 auto;
+}
+.post_inner_search{
+   
+    min-height: 233px; 
+}
+.filter_panel .open_modal.fmcg{
+     text-transform: uppercase;   
+}
+.filter_panel .open_modal.nttn{
+     text-transform: uppercase;   
+}
